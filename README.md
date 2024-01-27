@@ -1,4 +1,4 @@
-# flask_cgi_test
+# flask_fcgi_test
 
 ## コマンド
 
@@ -6,14 +6,14 @@
 
 ```
 git clone {url}
-cd flask_cgi_test
+cd flask_fcgi_test
 ```
 
 ### 権限付与
 
 ```
 chmod 644 .htaccess
-chmod 755 index.cgi
+chmod 755 index.fcgi
 chmod 600 hello.py
 ```
 
@@ -21,6 +21,12 @@ chmod 600 hello.py
 ```
 git reset --hard
 git pull
+```
+
+or
+
+```
+sh script/setup.sh
 ```
 
 ## 参考サイト
