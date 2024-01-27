@@ -9,6 +9,12 @@ git clone {url}
 cd flask_fcgi_test
 ```
 
+### ライブラリインストール
+
+```
+python3.9 -m install flup flask
+```
+
 ### 権限付与
 
 ```
