@@ -38,4 +38,5 @@ sh script/setup.sh
 ## 参考サイト
 - [PythonのWebアプリをXserverで動かす(Flask編) – CodeAid-Lab（コードエイド・ラボ）](https://codeaid.jp/webapp-xserver/)  
 - [Xserver内での移転作業でトラブル！原因はパーミッションだった。 | LIVETHERE](https://livethere.net/web_design/xserver_move)  
-- [git pull を強制し、リモートでローカルを上書きする方法 | WWWクリエイターズ](https://www-creators.com/archives/1097#git_reset_w_hyphenhard)  
+- [git pull を強制し、リモートでローカルを上書きする方法 | WWWクリエイターズ](https://www-creators.com/archives/1097#git_reset_w_hyphenhard)
+- [Flask2でURLルーティングを別ファイルにまとめたい #Python - Qiita](https://qiita.com/miyakiyo/items/34617adaf77acf8b4511)  
