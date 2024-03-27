@@ -2,6 +2,16 @@
 RewriteEngine On
 RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteBase /flask_fcgi_test/
+
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ /flask_fcgi_test/index.fcgi/$1 [L]
+RewriteRule ^(.*)$ index.fcgi/$1 [QSA,L]
+
+<Files ~ "\.(py|md|txt|yml|sqlite3|sh)$">
+  deny from all
+</Files>
+<Files ~ "(\.env|\.env\.example|\.git|\.gitignore|\.htaccess)$">
+  deny from all
+</Files>
 </IfModule>
