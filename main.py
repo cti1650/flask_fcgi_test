@@ -1,13 +1,13 @@
-from flask import Flask
-from route import test
+from flask import Flask, send_from_directory
+from route import get_bp
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 def hello_world():
     return {"hello": "world"}
 
-app.register_blueprint(test.bp)
+get_blueprint(app)
 
 if __name__ == "__main__":
   app.run()

@@ -8,7 +8,7 @@ RewriteBase /flask_fcgi_test/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.fcgi/$1 [QSA,L]
 
-<Files ~ "\.(py|md|txt|yml|sqlite3|sh)$">
+<Files ~ "\.(py|md|txt|yml|ini|sqlite3|sh)$">
   deny from all
 </Files>
 <Files ~ "(\.env|\.env\.example|\.git|\.gitignore|\.htaccess)$">

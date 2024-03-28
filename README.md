@@ -12,7 +12,7 @@ cd flask_fcgi_test
 ### ライブラリインストール
 
 ```
-python3.9 -m pip install flup flask
+python3.9 -m pip install -r requirements_prod.txt
 ```
 
 ### 権限付与
